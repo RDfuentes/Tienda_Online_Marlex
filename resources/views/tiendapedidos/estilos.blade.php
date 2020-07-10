@@ -13,18 +13,19 @@
 
 <section><br>
 <div class="container">
-    <div class="row justify-content-center">
-        <a class="btn btn-danger" href="{{ url('pedidosnuevos/create') }}">Realizar Pedido</a>
-        <div class="col-md-12"><br>
-            <h3 class="text-center" style="color:#9C9C9C">ESTILOS MARLEX</h3>
-            <p class="text-center">Seleccione el estilo de preferencia</p>
+        <div>
+            <a class="btn btn-block"  style="background-color:#00C851; color:white;" href="{{ url('pedidosnuevos/create') }}">REALIZAR PEDIDO</a>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <h3 class="text-center" style="color:#9C9C9C">COLORES MARLEX</h3>
+            </div>
         </div>
-     </div>
-</div>
+    </div><br>
 </section>
 
 
-<p class="btn btn-dark btn-block">PANTALON CON PALETONES</p><br><br>
+<p class="btn btn-dark btn-block">PANTALÓN CON PALETONES</p><br>
 
 <section>
     <div class="col-lg-12">
@@ -33,7 +34,7 @@
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/calidad.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/1.png')}}" style='width:9cm; height:10cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">CON PALETONES</h6>
@@ -44,7 +45,7 @@
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/calidad.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/2.png')}}" style='width:9cm; height:10cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">CON PALETONES</h6>
@@ -55,7 +56,7 @@
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/calidad.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/3.png')}}" style='width:9cm; height:10cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">CON PALETONES</h6>
@@ -67,7 +68,7 @@
     </div>
 </section>
 
-<p class="btn btn-dark btn-block">PANTALON SIN PALETONES</p><br><br>
+<p class="btn btn-dark btn-block">PANTALÓN SIN PALETONES</p><br><br>
 
 <section>
     <div class="col-lg-12">
@@ -76,7 +77,7 @@
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/calidad.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/4.png')}}" style='width:9cm; height:10cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">SIN PALETONES</h6>
@@ -87,7 +88,7 @@
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/calidad.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/5.png')}}" style='width:9cm; height:10cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">SIN PALETONES</h6>
@@ -98,7 +99,7 @@
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/calidad.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/6.png')}}" style='width:9cm; height:10cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">SIN PALETONES</h6>
@@ -106,6 +107,14 @@
                         </div>
                     </div>
                 </div>
+        </div>
+    </div><br><br>
+</section>
+
+<section>
+    <div class="container">
+        <div>
+        <a class="btn btn-block" style="background-color:#ff4444; color:white;" href="{{ url('tiendapedidos') }}">REGRESAR</a>
         </div>
     </div>
 </section>

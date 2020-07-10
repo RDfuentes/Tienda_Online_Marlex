@@ -40,7 +40,7 @@
             {!!Form::open(array('url'=>'pedidosnuevos','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
 
-            <p class="text-center">Antes de realizar su pedido le invitamos a observar nuestro catalogo de colores y estilos</p>
+            <p class="text-center">Antes de realizar su pedido le invitamos a observar nuestro catálogo de colores y estilos</p>
             <div class="row">
                 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
                     <div class="form-group">
@@ -58,42 +58,42 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
                     <div class="form-group">
-                        <label for="nombre">Nombres</label>
+                        <label for="nombre">Nombres <strong style="color:red">*</strong></label>
                         <input type="text" name="nombre" onkeypress="return soloLetras(event)"  class="form-control"  placeholder="Nombres" id="" autofocus required >
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
                     <div class="form-group">
-                        <label for="apellido">Apellidos</label>
+                        <label for="apellido">Apellidos <strong style="color:red">*</strong></label>
                         <input type="text" name="apellido" onkeypress="return soloLetras(event)"  class="form-control" placeholder="Apellidos" id="" required>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
-                        <label for="Direccion">Direccion de residencia</label>
-                        <input type="text" name="direccion" class="form-control" placeholder="Direccion" id="" required>
+                        <label for="Direccion">Dirección de residencia <strong style="color:red">*</strong></label>
+                        <input type="text" name="direccion" class="form-control" placeholder="Dirección" id="" required>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
-                        <label for="telinmediato">Telefono de contacto inmediato</label>
+                        <label for="telinmediato">Teléfono de contacto inmediato <strong style="color:red">*</strong></label>
                         <input type="number" name="telinmediato" class="form-control"  placeholder="XXXX-XXXX" id="" required>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
-                        <label for="fecha">Fecha de entrega</label>
-                        <input type="date" name="fecha" class="form-control" max="<?php echo date('Y-m-d',strtotime(date("Y-m-d", time()) . "+7 days")); ?>" min="<?php echo date('Y-m-d',strtotime(date("Y-m-d", time()) . "-0")); ?>"  id="" required >
+                        <label for="fecha">Fecha de entrega <strong style="color:red">*</strong></label>
+                        <input type="date" name="fecha" class="form-control" max="<?php echo date('Y-m-d',strtotime(date("Y-m-d", time()) . "+7 days")); ?>" min="<?php echo date('Y-m-d',strtotime(date("Y-m-d", time()) . "-7")); ?>"  id="" required >
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
                     <div class="form-group">
-                        <label>Talla de pantalon</label>
+                        <label>Talla de Pantalón <strong style="color:red">*</strong></label>
                         <select name="talla" class="form-control" id="" >
                         <option >Seleccione una talla</option>
                         <option value="1">Talla 1</option>
@@ -130,14 +130,14 @@
 
                 <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
                     <div class="form-group">
-                        <label for="largo">Largo de pantalon</label>
+                        <label for="largo">Largo de Pantalón</label>
                         <input type="number" name="largo" class="form-control" placeholder="Cintura hasta el talon del pie" id="">
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
                     <div class="form-group">
-                        <label for="color">Color del pantalon</label>
+                        <label for="color">Color del Pantalón <strong style="color:red">*</strong> <a href="/colores"><strong>Ver colores</strong></a></label>
                         <input type="text" name="color" class="form-control" onkeypress="return soloLetras(event)"  placeholder="Ingrese el color de preferencia" id="" required>
                     </div>       
                 </div>
@@ -145,7 +145,7 @@
 
                 <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
                     <div class="form-group">
-                        <label>Estilo del pantalon</label>
+                        <label>Estilo del Pantalón <strong style="color:red">*</strong> <a href="/estilos"><strong style="color:red">Ver estilos</strong></a></label>
                         <select name="estilo" class="form-control" id="" required >
                         <option >Seleccione el Estilo</option>
                         <option value="Clasico con paletones">1. Clasico con paletones</option>
@@ -162,7 +162,7 @@
                 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
                     <div class="form-group">
                         <label for="nota">Observaciones</label>
-                        <input type="text" name="nota" class="form-control" placeholder="Aqui puede escribir observaciones sobre el pedido" id="">
+                        <input type="text" name="nota" class="form-control" placeholder="Observaciones del pedido" id="">
                     </div>
                 </div>
             </div>

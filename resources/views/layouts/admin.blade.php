@@ -74,6 +74,7 @@
                <div class="media">
                  <div class="mr-3 icon-wrap"><span class="icon ion-ios-telephone"></span></div>
                  <div class="media-body">
+                   <h5>Teléfono:</h5>
                    <h5>+502 5465 7630</h5>
                    <h5>+502 4174 4025</h5>
                  </div>
@@ -92,7 +93,9 @@
                <div class="media">
                  <div class="mr-3 icon-wrap"><span class="icon ion-android-time"></span></div>
                  <div class="media-body">
-                   <h5>Atencion: 9:00 am - 5:30 pm</h5>
+                  <h5>Atención:</h5>
+                  <h5>9:00am - 1:30pm</h5>
+                  <h5>3:00pm - 6:00pm</h5>
                  </div>
                </div>
              </div>
