@@ -101,7 +101,7 @@ $(document).ready(function(){
         </div>
     </div><br> 
 
-    <div class="col-lg-12">
+    <div class="col-lg-12"> <!--cambiar-->
         <div class="row">
 
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
@@ -121,9 +121,9 @@ $(document).ready(function(){
 
 
                             <section id="element1" style="display:none">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12"> <!--cambiar-->
                                     <div class="row">
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/1.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -134,7 +134,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <!--<div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/2.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -144,8 +144,8 @@ $(document).ready(function(){
                                                     <h5 style="color:red; line-height:0px">Q. 160.00</h5>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        </div>-->
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/3.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -156,7 +156,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12"> <!--cambiar-->
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/4.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -183,20 +183,20 @@ $(document).ready(function(){
 
 
                             <section id="element2" style="display:none">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12"> <!--cambiar-->
                                     <div class="row">
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/5.jpg')}}" style='width:5cm; height:5cm' alt="">
                                                 </div>
                                                 <div class="text-center">
-                                                    <h6 style="line-height:25px">BN NEGRO LINEAS</h6>
+                                                    <h6 style="line-height:25px">BN NEGRO LINEA ANCHA</h6>
                                                     <h5 style="color:red; line-height:0px">Q. 160.00</h5>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/6.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -207,18 +207,18 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/7.jpg')}}" style='width:5cm; height:5cm' alt="">
                                                 </div>
                                                 <div class="text-center">
-                                                    <h6 style="line-height:25px">BN CAFE CLARO LIENAS</h6>
+                                                    <h6 style="line-height:25px">BN CAFE CLARO LINEAS</h6>
                                                     <h5 style="color:red; line-height:0px">Q. 160.00</h5>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/8.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -229,18 +229,18 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/9.jpg')}}" style='width:5cm; height:5cm' alt="">
                                                 </div>
                                                 <div class="text-center">
-                                                    <h6 style="line-height:25px">BN GRIS MEDIO LIENAS</h6>
+                                                    <h6 style="line-height:25px">BN GRIS MEDIO LINEAS</h6>
                                                     <h5 style="color:red; line-height:0px">Q. 160.00</h5>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/10.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -251,7 +251,73 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="text-center">
+                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                </div>
+                                                <div class="text-center">
+                                                    <h6 style="line-height:25px">BN NEGRO LINEAS</h6>
+                                                    <h5 style="color:red; line-height:0px">Q. 160.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="text-center">
+                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                </div>
+                                                <div class="text-center">
+                                                    <h6 style="line-height:25px">BN GRIS CLARO MIL LINEAS</h6>
+                                                    <h5 style="color:red; line-height:0px">Q. 160.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="text-center">
+                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                </div>
+                                                <div class="text-center">
+                                                    <h6 style="line-height:25px">BN CAQUI LINEAS </h6>
+                                                    <h5 style="color:red; line-height:0px">Q. 160.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="text-center">
+                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                </div>
+                                                <div class="text-center">
+                                                    <h6 style="line-height:25px">BN CANELA </h6>
+                                                    <h5 style="color:red; line-height:0px">Q. 160.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="text-center">
+                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                </div>
+                                                <div class="text-center">
+                                                    <h6 style="line-height:25px">BN ITALIANO BESH </h6>
+                                                    <h5 style="color:red; line-height:0px">Q. 160.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="text-center">
+                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                </div>
+                                                <div class="text-center">
+                                                    <h6 style="line-height:25px">BN GRIS MEDIO LISO </h6>
+                                                    <h5 style="color:red; line-height:0px">Q. 160.00</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/11.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -262,7 +328,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/12.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -288,9 +354,9 @@ $(document).ready(function(){
                             </div><br>
                                 
                             <section id="element3" style="display:none">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12"> <!--cambiar-->
                                     <div class="row">
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/13.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -301,7 +367,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/14.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -313,7 +379,7 @@ $(document).ready(function(){
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/15.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -324,7 +390,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/16.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -335,7 +401,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/17.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -346,7 +412,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/18.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -357,7 +423,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/19.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -368,7 +434,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/colores-carton/20.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -393,9 +459,9 @@ $(document).ready(function(){
                             </div><br>
 
                             <section id="element4" style="display:none">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12"> <!--cambiar-->
                                     <div class="row">
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/21.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -406,7 +472,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/22.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -417,7 +483,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/23.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -428,7 +494,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/24.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -439,7 +505,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/25.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -450,7 +516,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/26.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -461,7 +527,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/27.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -472,7 +538,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/28.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -483,7 +549,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/29.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -494,7 +560,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/30.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -505,7 +571,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/31.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -516,7 +582,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/32.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -527,7 +593,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/33.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -538,7 +604,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/34.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -549,7 +615,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/35.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -560,7 +626,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-it/36.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -596,9 +662,9 @@ $(document).ready(function(){
                             </div><br>
 
                             <section id="element5" style="display:none">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12"> <!--cambiar-->
                                     <div class="row">
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/38.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -609,7 +675,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/39.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -620,7 +686,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/40.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -631,7 +697,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/41.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -642,7 +708,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/42.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -653,7 +719,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/43.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -664,7 +730,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/44.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -675,7 +741,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/45.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -686,7 +752,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/46.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -697,7 +763,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/47.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -708,7 +774,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/48.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -719,7 +785,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/49.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -730,7 +796,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/50.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -741,7 +807,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/51.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -752,7 +818,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/52.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -763,7 +829,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/53.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -774,7 +840,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/54.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -785,7 +851,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/55.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -796,7 +862,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/56.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -807,7 +873,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/57.jpg')}}" style='width:5cm; height:5cm' alt="">
@@ -818,7 +884,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/58.jpg')}}"  style='width:5cm; height:5cm' alt="">
@@ -829,7 +895,7 @@ $(document).ready(function(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
+                                        <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
                                                 <div class="text-center">
                                                 <img src="{{asset('images/mostrario-cf/59.jpg')}}"  style='width:5cm; height:5cm' alt="">
