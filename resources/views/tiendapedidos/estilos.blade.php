@@ -31,36 +31,25 @@
     <div class="col-lg-12">
         <div class="row">
 
-                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/estilos/1.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/1.png')}}" style='width:9cm; height:14cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">CON PALETONES</h6>
-                            <h5 style="color:red; line-height:0px">CLASICO</h5>
+                            <h5 style="color:red; line-height:0px">CLASICO</h5><br>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/estilos/2.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/2.png')}}" style='width:9cm; height:14cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">CON PALETONES</h6>
                             <h5 style="color:red; line-height:0px">SLIM</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
-                    <div class="form-group">
-                        <div class="text-center">
-                        <img src="{{asset('images/estilos/3.png')}}" style='width:9cm; height:10cm' alt="">
-                        </div>
-                        <div class="text-center">
-                            <h6 style="line-height:25px">CON PALETONES</h6>
-                            <h5 style="color:red; line-height:0px">SLIM FIT</h5>
                         </div>
                     </div>
                 </div>
@@ -77,29 +66,29 @@
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/estilos/4.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/3.png')}}" style='width:9cm; height:14cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">SIN PALETONES</h6>
-                            <h5 style="color:red; line-height:0px">CLASICO</h5>
+                            <h5 style="color:red; line-height:0px">CLASICO</h5><br>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/estilos/5.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/4.png')}}" style='width:9cm; height:14cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">SIN PALETONES</h6>
-                            <h5 style="color:red; line-height:0px">SLIM</h5>
+                            <h5 style="color:red; line-height:0px">SLIM</h5><br>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/estilos/6.png')}}" style='width:9cm; height:10cm' alt="">
+                        <img src="{{asset('images/estilos/5.png')}}" style='width:9cm; height:14cm' alt="">
                         </div>
                         <div class="text-center">
                             <h6 style="line-height:25px">SIN PALETONES</h6>
