@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::resource('tiendapedidos','TiendaPedidosController');
 Route::get('/colores','TiendaPedidosController@colores');
 Route::get('/estilos','TiendaPedidosController@estilos');
-Route::resource('pedidosnuevos','ClienteNuevoController');
+Route::resource('pedi2nue','ClienteNuevoController');
 Route::resource('clientes','ClientesController'); 
 
 Auth::routes();

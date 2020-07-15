@@ -13,7 +13,7 @@ class ClienteNuevoController extends Controller
 {
     public function __construct()
     {
-
+        //$this->middleware('auth');
     }
     
     // FUNCION INDEX, MOSTRAR, BUSCAR 
@@ -26,19 +26,21 @@ class ClienteNuevoController extends Controller
             ->where('id_cliente','LIKE','%'.$query.'%')
             ->orwhere('nombre','LIKE','%'.$query.'%')
             ->orwhere('apellido','LIKE','%'.$query.'%')
+            ->orwhere('fecha','LIKE','%'.$query.'%')
+            ->orwhere('talla','LIKE','%'.$query.'%')
             ->orwhere('color','LIKE','%'.$query.'%')
             ->orwhere('estilo','LIKE','%'.$query.'%')
             ->orwhere('nota','LIKE','%'.$query.'%')
             ->orderBy('id_cliente','desc')
             ->paginate(7);
-            return view('pedidosnuevos.index',["nuevos"=>$nuevos,"searchText"=>$query]);
+            return view('pedi2nue.index',["nuevos"=>$nuevos,"searchText"=>$query]);
         }
     } 
 
     // FUNCION REGISTRAR NUEVO USUARIO
     public function create() // cargar un objeto y sus datos 
     { 
-        return view("pedidosnuevos.create"); // retorna a la vista principal que se ha creado en resource
+        return view("pedi2nue.create"); // retorna a la vista principal que se ha creado en resource
     } 
 
     // FUNCION STORE PARA CREAR NUEVO USUARIO
@@ -64,13 +66,13 @@ class ClienteNuevoController extends Controller
     //FUNCION MOSTRAR VISTA
     public function show($id_cliente) // mostrar un objeto y los datos
     {
-        return view("pedidosnuevos.show",["nuevos"=>ClienteNuevo::findOrFail($id_cliente)]);
+        return view("pedi2nue.show",["nuevos"=>ClienteNuevo::findOrFail($id_cliente)]);
     }
 
     //FUNCION PARA LLAMAR AL ID DEL CLIENTE Y MOSTRARLO EN LA VISTA EDIT
     public function edit($id_cliente) // editar un objeto y los datos
     {
-        return view("pedidosnuevos.edit",["nuevos"=>ClienteNuevo::findOrFail($id_cliente)]);
+        return view("pedi2nue.edit",["nuevos"=>ClienteNuevo::findOrFail($id_cliente)]);
     }
 
     // FUNCION PARA ALMACENAR LOS CLIENTES FRECUENTES
@@ -89,7 +91,7 @@ class ClienteNuevoController extends Controller
         $nuevos->nota=$request->get('nota');
         $nuevos->condicion='1';
         $nuevos->save();
-        return Redirect::to('pedidosnuevos');
+        return Redirect::to('pedi2nue');
     }
 
     // FUNCION ELIMINAR CLIENTE
@@ -98,6 +100,6 @@ class ClienteNuevoController extends Controller
         $nuevos=ClienteNuevo::findOrFail($id_cliente);
         $nuevos->condicion='0';
         $nuevos->update();
-        return Redirect::to('pedidosnuevos');
+        return Redirect::to('pedi2nue');
     }
 }

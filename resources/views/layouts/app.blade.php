@@ -26,7 +26,7 @@
             
                 <a class="navbar-brand" href="{{ url('/clientes/') }}"><button class="btn btn-dark">Clientes</button></a>
                <!-- <a class="navbar-brand" href="{{ url('/personas/pedidosfrecuentes/') }}"><button class="btn btn-danger">Pedidos Frecuentes</button></a>-->
-                <a class="navbar-brand" href="{{ url('/pedidosnuevos/') }}"><button class="btn btn-success">Pedidos Nuevos</button></a>
+                <a class="navbar-brand" href="{{ url('/pedi2nue/') }}"><button class="btn btn-success">Pedidos Nuevos</button></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

@@ -118,18 +118,22 @@
          <div class="col-md-4">
            <h3 class="mb-4">INFORMACIÓN</h3>
            <ul class="list-unstyled ">
-             <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-location"></span></span><span class="">San Pedro Sacatepéquez, San Marcos</span></li>
-             <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-telephone"></span></span><span class="">+502 5465 7630 / +502 4174 4025 </span></li>
+             <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-location"></span></span><span class="">3ra Ave. 1-04. Zona 1. San Pedro Sacatepéquez, San Marcos.</span></li>
+             <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-telephone"></span></span><span class="">+502 4174 4025</span></li>
+             <li class="d-flex"><span class="mr-3"><span class="fa fa-whatsapp"></span></span><span class="">+502 5465 7630</span></li>
              <li class="d-flex"><span class="mr-3"><span class="icon ion-email"></span></span><span class="">marlex.pantalones@gmail.com</span></li>
            </ul>
          </div>
 
          <div class="col-md-5">
-           <h3>REDES SOCIALES</h3>
+           <h3>FACEBOOK</h3>
            <p>
+             <a href="https://www.facebook.com/marlexgt" class="p-3"><strong>Marlexgt</strong></a>
+             <!--
              <a href="https://www.facebook.com/marlexgt" class="p-2"><span class="fa fa-facebook"></span></a>
              <a href="https://www.facebook.com/marlexgt" class="p-2"><span class="fa fa-twitter"></span></a>
              <a href="https://www.facebook.com/marlexgt" class="p-2"><span class="fa fa-instagram"></span></a>
+             -->
            </p>
          </div>
        </div>

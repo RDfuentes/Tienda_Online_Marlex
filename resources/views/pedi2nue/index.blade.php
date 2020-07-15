@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <br>
                 <h3 class="text-center">PEDIDOS NUEVOS <br></h3>
-                @include('pedidosnuevos.search') <br>
+                @include('pedi2nue.search') <br>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
                     </td>
                 </tr>
                 <!-- incluimos al modal.blade.php (se hace antes de culminar el foreach)-->
-                @include('pedidosnuevos.modal')
+                @include('pedi2nue.modal')
                 @endforeach
             </table>
         </div>

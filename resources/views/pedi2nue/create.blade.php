@@ -37,9 +37,12 @@
             </div>
             @endif
 
-            {!!Form::open(array('url'=>'pedidosnuevos','method'=>'POST','autocomplete'=>'off'))!!}
+            {!!Form::open(array('url'=>'pedi2nue','method'=>'POST','autocomplete'=>'off'))!!}
             {{Form::token()}}
 
+            <p class="text-center">Los campos con asterisco (<strong style="color:red">*</strong>) son obligatorios para realizar su pedido</p>
+            
+            <!--
             <p class="text-center">Antes de realizar su pedido le invitamos a observar nuestro catálogo de colores y estilos</p>
             <div class="row">
                 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
@@ -54,6 +57,7 @@
                     </div>
                 </div>
             </div>
+            -->
 
             <div class="row">
                 <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
@@ -137,7 +141,7 @@
 
                 <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
                     <div class="form-group">
-                        <label for="color">Color del Pantalón <strong style="color:red">*</strong> <a href="/colores"><strong>Ver colores</strong></a></label>
+                        <label for="color">Color del Pantalón <strong style="color:red">*</strong> <a href="/colores" target="_blank"><strong>Ver colores</strong></a></label>
                         <input type="text" name="color" class="form-control" onkeypress="return soloLetras(event)"  placeholder="Ingrese el color de preferencia" id="" required>
                     </div>       
                 </div>
@@ -145,15 +149,14 @@
 
                 <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
                     <div class="form-group">
-                        <label>Estilo del Pantalón <strong style="color:red">*</strong> <a href="/estilos"><strong style="color:red">Ver estilos</strong></a></label>
+                        <label>Estilo del Pantalón <strong style="color:red">*</strong> <a href="/estilos" target="_blank"><strong style="color:red">Ver estilos</strong></a></label>
                         <select name="estilo" class="form-control" id="" required >
                         <option >Seleccione el Estilo</option>
-                        <option value="Clasico con paletones">1. Clasico con paletones</option>
-                        <option value="Slim con paletones">2. Slim con paletones</option>
-                        <option value="Slim Fit con paletones">3. Slim Fit con paletones</option>
-                        <option value="Clasico SIN paletones" style="color: #d5303e">4. Clasico SIN paletones</option>
-                        <option value="Slim SIN paletones" style="color: #d5303e">5. Slim SIN paletones</option>
-                        <option value="Slim Fit SIN paletones" style="color: #d5303e">6. Slim Fit SIN paletones</option>
+                        <option value="Con paletones Clásico">1. Con paletones Clásico</option>
+                        <option value="Con paletones Slim">2. Con paletones Slim</option>
+                        <option value="Sin paletones Clásico" style="color: #d5303e">3. Sin paletones Clásico</option>
+                        <option value="Sin paletones Slim" style="color: #d5303e">4. Sin paletones Slim</option>
+                        <option value="Sin paletones Slim Fit" style="color: #d5303e">5. Sin paletones Slim Fit</option>
                         </select>
                         <!--<input type="number" name="talla" class="form-control" placeholder="<< contorno de cintura >>" id="">-->
                     </div>

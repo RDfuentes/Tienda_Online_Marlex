@@ -14,7 +14,7 @@
 <section><br>
 <div class="container">
         <div>
-            <a class="btn btn-block"  style="background-color:#00C851; color:white;" href="{{ url('pedidosnuevos/create') }}">REALIZAR PEDIDO</a>
+            <a class="btn btn-block"  style="background-color:#00C851; color:white;" href="{{ url('pedi2nue/create') }}">REALIZAR PEDIDO</a>
         </div><br>
         <div class="row justify-content-center">
             <div class="col-md-12">

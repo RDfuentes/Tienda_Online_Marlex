@@ -14,7 +14,7 @@
             @endif
 
             <!-- envio de dos parametros-->              <!-- tomar en cuenta el cache de laravel para las rutas-->
-            {!!Form::model($nuevos,['method'=>'PATCH','route'=>['pedidosnuevos.update',$nuevos->id_cliente]])!!} <!-- hacemos uso de la funcion edit y update del controlador-->
+            {!!Form::model($nuevos,['method'=>'PATCH','route'=>['pedi2nue.update',$nuevos->id_cliente]])!!} <!-- hacemos uso de la funcion edit y update del controlador-->
             {{Form::token()}}
 
             <div class="row">
@@ -97,7 +97,7 @@
 
                 <div class="form-group">
                     <button class="btn btn-primary" type="submit">Guardar</button>
-                    <a class="btn btn-danger" href="{{ url('/pedidosnuevos') }}">Cancelar</a>
+                    <a class="btn btn-danger" href="{{ url('/pedi2nue') }}">Cancelar</a>
                 </div>
             {!!Form::close()!!}
 

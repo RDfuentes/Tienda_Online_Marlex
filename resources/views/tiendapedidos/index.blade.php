@@ -53,7 +53,7 @@ $(document).ready(function(){
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                 <div class="form-group">
                         <div class="text-center"><br>
-                        <a href="pedidosnuevos/create"><button autofocus class="btn btn-link btn btn-block"><img src="{{asset('images/nuevopedido.png')}}" style='width:7cm; height:7cm'></button></a>
+                        <a href="pedi2nue/create"><button autofocus class="btn btn-link btn btn-block"><img src="{{asset('images/nuevopedido.png')}}" style='width:7cm; height:7cm'></button></a>
                         </div>
                     </div>
                 </div>
