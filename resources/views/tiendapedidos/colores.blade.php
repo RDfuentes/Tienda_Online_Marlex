@@ -9,11 +9,31 @@
     <title>COLORES</title>
     <!-- Styles -->
     <link href="{{ asset('./css/app.css') }}" rel="stylesheet">  
+    <link href="{{ asset('./css/fresco.css') }}" rel="stylesheet">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{asset('js/fresco.js')}}"></script>
+
 </head>
 
-</section>
-<!-- FUNCION QUE SIRVE PARA MOSTRAR LA TABLA, AL PRECIONAR EL BOTON BOTON " MOSTRAR RESULTADOS " -->
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+
+$(document).ready(function(){
+
+//Al hacer clic en cualquier img ejecutamos la acción
+$('.content img').click(function() {
+	//Capturamos el src de la img
+	var postimg= $(this).attr('src');
+	//Agregamos el src a una href simbólico
+	$('#verimagenes').attr('href',postimg);
+	//Hacemos clic en el enlace para activar el visor
+	$('#verimagenes').click();
+});
+
+});
+</script>
+
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -88,6 +108,8 @@ $(document).ready(function(){
 
 <body>
 
+<a id="verimagenes" class='fresco' data-fresco-group='grupo'></a>
+
 <section><br>
 
     <div class="container">
@@ -97,6 +119,7 @@ $(document).ready(function(){
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <h3 class="text-center" style="color:#9C9C9C">COLORES MARLEX</h3>
+                <p class="text-center" >*Click en las imagenes de los colores para verlas a detalle*</p>
             </div>
         </div>
     </div><br> 
@@ -107,7 +130,7 @@ $(document).ready(function(){
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/calidad.png')}}" style='width:7cm; height:7.5cm' alt="">
+                        <img src="{{asset('images/calidad.png')}}" style='width:7cm; height:7.5cm' alt="Prueba">
                         </div><br>
                     </div>
                 </div>             
@@ -125,8 +148,8 @@ $(document).ready(function(){
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/1.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content" >
+                                                <img src="{{asset('images/colores-carton/1.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">FRANCO GRIS</h6>
@@ -136,8 +159,8 @@ $(document).ready(function(){
                                         </div>
                                         <!--<div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/2.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/2.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">FRANCO AZUL</h6>
@@ -147,8 +170,8 @@ $(document).ready(function(){
                                         </div>-->
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/3.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/3.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">FRANCO GRIS AZUL</h6>
@@ -158,8 +181,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12"> <!--cambiar-->
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/4.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/4.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">FRANCO SIPSON</h6>
@@ -187,8 +210,8 @@ $(document).ready(function(){
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/5.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/5.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN NEGRO LINEA ANCHA</h6>
@@ -198,8 +221,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/6.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/6.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN SIPSON LINEAS</h6>
@@ -209,8 +232,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/7.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/7.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN CAFE CLARO LINEAS</h6>
@@ -220,8 +243,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/8.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/8.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN GRIS OBSCURO LINEAS</h6>
@@ -231,8 +254,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/9.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/9.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN GRIS MEDIO LINEAS</h6>
@@ -242,8 +265,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/10.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/10.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN GRIS CLARO LINEAS</h6>
@@ -253,8 +276,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/11.jpeg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN NEGRO LINEAS</h6>
@@ -264,8 +287,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/12.jpeg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN GRIS CLARO MIL LINEAS</h6>
@@ -275,8 +298,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/13.jpeg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN CAQUI LINEAS </h6>
@@ -286,8 +309,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/14.jpeg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN CANELA </h6>
@@ -297,8 +320,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/15.jpeg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN ITALIANO BESH </h6>
@@ -308,8 +331,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/calidad.png')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/16.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN GRIS MEDIO LISO </h6>
@@ -319,8 +342,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/11.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/17.jpeg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN GRIS OBSCURO LISO</h6>
@@ -330,8 +353,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/12.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/18.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">BN VERDE LISO</h6>
@@ -358,8 +381,8 @@ $(document).ready(function(){
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/13.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/19.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">TUXEDO AZUL</h6>
@@ -369,8 +392,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/14.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/20.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">TUXEDO GRIS VERDE</h6>
@@ -381,8 +404,8 @@ $(document).ready(function(){
 
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/15.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/21.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">LB AZUL CLARO</h6>
@@ -392,8 +415,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/16.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/22.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">LB NEGRO LISO</h6>
@@ -403,8 +426,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/17.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/23.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">LB GRIS MEDIO</h6>
@@ -414,8 +437,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/18.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/24.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">LB VERDE CLARO</h6>
@@ -425,8 +448,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/19.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/25.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">LB CAQUI OBSCURO</h6>
@@ -436,8 +459,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/colores-carton/20.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/colores-carton/26.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">LB CAFE OBSCURO</h6>
@@ -463,8 +486,8 @@ $(document).ready(function(){
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/21.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/21.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO PRINGAS</h6>
@@ -474,8 +497,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/22.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/22.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS JASPIADO PRINGAS</h6>
@@ -485,8 +508,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/23.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/23.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">CANELA JASPIADO</h6>
@@ -496,8 +519,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/24.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/24.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">VERDE JASPIADO</h6>
@@ -507,8 +530,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/25.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/25.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO LINEA GRUESA</h6>
@@ -518,8 +541,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/26.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/26.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">VERDE CUADRITOS</h6>
@@ -529,8 +552,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/27.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/27.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS JASPIADO LISO</h6>
@@ -540,8 +563,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/28.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/28.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">OXFORD OBSCURO LISO</h6>
@@ -551,8 +574,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/29.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/29.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS PERLA</h6>
@@ -562,8 +585,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/30.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/30.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO LISO</h6>
@@ -573,8 +596,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/31.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/31.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS MEDIO JASPIADO</h6>
@@ -584,8 +607,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/32.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/32.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS CUADROS GRANDES</h6>
@@ -595,8 +618,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/33.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/33.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">AZUL CUADROS GRANDES</h6>
@@ -606,8 +629,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/34.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/34.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS MEDIO</h6>
@@ -617,8 +640,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/35.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/35.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS JASPIADO</h6>
@@ -628,8 +651,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/36.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/36.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">CAFE MIL CUADROS</h6>
@@ -639,8 +662,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-12 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-it/37.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-it/37.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">VERDE JASPIADO LISO</h6>
@@ -666,8 +689,8 @@ $(document).ready(function(){
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/38.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/38.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">AZUL LINEAS</h6>
@@ -677,8 +700,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/39.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/39.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO LINEAS</h6>
@@ -688,8 +711,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/40.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/40.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO OBSCURO LINEAS</h6>
@@ -699,8 +722,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/41.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/41.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">OXFORD NEGRO</h6>
@@ -710,8 +733,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/42.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/42.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO LINEA GRIS</h6>
@@ -721,8 +744,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/43.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/43.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">SIPSON LINEA GRIS</h6>
@@ -732,8 +755,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/44.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/44.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS OBSCURO LINEAS</h6>
@@ -743,8 +766,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/45.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/45.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">SIPSON LINEA</h6>
@@ -754,8 +777,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/46.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/46.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS MEDIO LINEAS</h6>
@@ -765,8 +788,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/47.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/47.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO LINEA CELESTE</h6>
@@ -776,8 +799,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/48.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/48.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">AZUL LISO</h6>
@@ -787,8 +810,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/49.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/49.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO LISO</h6>
@@ -798,8 +821,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/50.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/50.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS LISO</h6>
@@ -809,8 +832,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/51.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/51.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">AZUL RAYADO</h6>
@@ -820,8 +843,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/52.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/52.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO CUADRITOS</h6>
@@ -831,8 +854,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/53.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/53.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS MEDIO CUADRITOS</h6>
@@ -842,8 +865,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/54.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/54.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">CAQUI CUADRITOS</h6>
@@ -853,8 +876,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/55.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/55.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">NEGRO MIL CUADROS</h6>
@@ -864,8 +887,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/56.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/56.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">AZUL MEDIO LINEAS</h6>
@@ -875,8 +898,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/57.jpg')}}" style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/57.jpg')}}" style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">SIPSON CUADRITOS</h6>
@@ -886,8 +909,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/58.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/58.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">GRIS MEDIO LISO</h6>
@@ -897,8 +920,8 @@ $(document).ready(function(){
                                         </div>
                                         <div class="col-lg-6 col-sm-3 col-md-3 col-xs-12">
                                             <div class="form-group">
-                                                <div class="text-center">
-                                                <img src="{{asset('images/mostrario-cf/59.jpg')}}"  style='width:5cm; height:5cm' alt="">
+                                                <div class="content">
+                                                <img src="{{asset('images/mostrario-cf/59.jpg')}}"  style='width:5cm; height:5cm' alt="Prueba">
                                                 </div>
                                                 <div class="text-center">
                                                     <h6 style="line-height:25px">AZUL PAVO</h6>
@@ -921,12 +944,15 @@ $(document).ready(function(){
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
                     <div class="form-group">
                         <div class="text-center">
-                        <img src="{{asset('images/elegancia1.png')}}" style='width:7cm; height:7.5cm' alt="">
+                        <img src="{{asset('images/elegancia1.png')}}" style='width:7cm; height:7.5cm' alt="Prueba">
                         </div>
                     </div>
                 </div>
         </div>
     </div>
+</section>
+
+<section>
 </section>
 
 
